@@ -1,0 +1,126 @@
+.title {
+    margin: 32px 0 80px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.filters {
+    margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+    .filters {
+        margin-bottom: 32px;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .jk {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .corp {
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 1;
+    }
+
+    .rooms {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+    }
+
+    .price {
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row-start: 2;
+    }
+
+    .square {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 2;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .filters {
+        margin-bottom: 48px;
+    }
+
+    .content {
+        grid-template-columns: 2fr 3fr 2fr 3fr 2fr;
+        grid-template-rows: 1fr;
+    }
+
+    .jk {
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
+
+    .corp {
+        grid-column-start: auto;
+        grid-column-end: auto;
+        grid-row-start: auto;
+    }
+
+    .rooms {
+        grid-column-start: auto;
+        grid-column-end: auto;
+        grid-row-start: auto;
+    }
+
+    .price {
+        grid-column-start: auto;
+        grid-column-end: auto;
+        grid-row-start: auto;
+    }
+
+    .square {
+        grid-column-start: auto;
+        grid-column-end: auto;
+        grid-row-start: auto;
+    }
+
+    .title {
+        font-size: 42px;
+    }
+
+    .label:last-child {
+        order: -1;
+    }
+
+    .label:first-child {
+        order: -2;
+    }
+}
+
+.label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    color: #666666;
+    margin-bottom: 9px;
+}
+
+.label>sup {
+    position: absolute;
+    font-size: 0.5em;
+}

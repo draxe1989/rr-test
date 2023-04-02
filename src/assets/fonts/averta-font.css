@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "averta";
+    src: url("./Averta Cyrillic Light.otf") format("opentype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "averta";
+    src: url("./Averta Cyrillic Regular.otf") format("opentype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "averta";
+    src: url("./Averta Cyrillic SemiBold.otf") format("opentype");
+    font-weight: 600;
+}

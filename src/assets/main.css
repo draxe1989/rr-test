@@ -1,0 +1,31 @@
+@import './base.css';
+@import './fonts/averta-font.css';
+
+.container {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+
+    .container {
+        width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .container {
+        width: 1024px;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .container {
+        width: 1280px;
+    }
+
+}
